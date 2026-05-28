@@ -286,6 +286,7 @@ nav {
 
 /* ── FULL BLEED PANELS ── */
 .section-session { display: grid; grid-template-columns: 1fr 1fr; min-height: 660px; }
+.section-about   { display: grid; grid-template-columns: 1fr 1fr; min-height: 700px; }
 .section-podium  { display: grid; grid-template-columns: 1fr 1fr; min-height: 620px; }
 
 .photo-panel { position: relative; overflow: hidden; }
@@ -380,7 +381,7 @@ nav {
 }
 .about-book-inline {
   flex-shrink: 0;
-  width: 150px;
+  width: 280px;
   margin-top: 0.3rem;
 }
 .about-book-inline img {
@@ -508,7 +509,7 @@ footer {
   .section-what { grid-template-columns:1fr; gap:3.5rem; padding:5.5rem 2.5rem; }
   .section-dark { padding:5.5rem 2.5rem; }
   .dark-grid { grid-template-columns:1fr 1fr; }
-  .section-session, .section-podium { grid-template-columns:1fr; min-height:auto; }
+  .section-session, .section-about, .section-podium { grid-template-columns:1fr; min-height:auto; }
   .photo-panel { min-height:55vw; }
   .text-panel-light, .text-panel-dark, .text-panel-warm { padding:4.5rem 2.5rem; }
   .section-contact { grid-template-columns:1fr; gap:4rem; padding:5.5rem 2.5rem; }
@@ -653,41 +654,26 @@ footer {
   </div>
 </section>
 
-<!-- ABOUT: full-bleed banner + text beneath -->
-<section id="about">
-  <!-- TRUE FULL-BLEED PHOTO — edge to edge, no columns -->
-  <div class="about-banner fade-in">
-    <img src="Image.jpg" alt="Linda Colasanti">
-  </div>
-
-  <!-- TEXT FLOWS COMPLETELY UNDERNEATH in a separate dark block -->
-  <div class="about-text-block fade-in">
-    <div class="about-text-inner">
-      <span class="section-label-panel">About Linda</span>
-      <h2 class="section-title-panel">She didn't just<br>study dyslexia.<br><em>She changed<br>the law.</em></h2>
-
-      <div class="about-content-row">
-        <div class="about-body-col">
-          <p class="section-body-panel">Linda Colasanti is a Certified Orton-Gillingham Practitioner, Dyslexia Specialist, and NLP Coach with 15+ years of clinical work with struggling readers. She was the legislative architect of North Carolina HB149 — the state's first dyslexia legislation — and led Decoding Dyslexia NC as State Director for six years.<br><br>She is the author of <em style="color:rgba(255,255,255,0.7)">Suzy the Struggling Reader</em>, a children's book about dyslexia used by specialists, schools, and families across the country.</p>
-          <div class="certs-grid">
-            <div class="cert-pill">OG Practitioner — 3 curricula</div>
-            <div class="cert-pill">Certified Dyslexia Specialist</div>
-            <div class="cert-pill">15+ Yrs Assistive Technology</div>
-            <div class="cert-pill">NLP Master Coach</div>
-            <div class="cert-pill">Certified AI Consultant</div>
-            <div class="cert-pill">NC HB149 — Legislative Author</div>
-          </div>
-          <div class="legislation-block">
-            <p><strong>NC HB149</strong> — signed July 20, 2017. Linda built the coalition, gathered the data, and wrote the legislation that gave every dyslexic child in North Carolina the right to identification and intervention. Dr. Fernette Eide helped design the research poll whose data was passed directly to NC State Superintendent Dr. June Atkinson — and delivered in person to Superintendent Mark Johnson when the bill became law.</p>
-          </div>
-        </div>
-
-        <!-- Suzy book cover sits inline with the text -->
-        <div class="about-book-inline">
-          <img src="suzy-book.jpg" alt="Suzy the Struggling Reader">
-        </div>
-      </div>
+<!-- ABOUT: 1fr 1fr grid like all other sections -->
+<section class="section-about" id="about">
+  <div class="text-panel-dark fade-in">
+    <span class="section-label-panel">About Linda</span>
+    <h2 class="section-title-panel">She didn't just<br>study dyslexia.<br><em>She changed<br>the law.</em></h2>
+    <p class="section-body-panel">Linda Colasanti is a Certified Orton-Gillingham Practitioner, Dyslexia Specialist, and NLP Coach with 15+ years of clinical work with struggling readers. She was the legislative architect of North Carolina HB149 — the state's first dyslexia legislation — and led Decoding Dyslexia NC as State Director for six years.<br><br>She is the author of <em style="color:rgba(255,255,255,0.7)">Suzy the Struggling Reader</em>, a children's book about dyslexia used by specialists, schools, and families across the country.</p>
+    <div class="certs-grid">
+      <div class="cert-pill">OG Practitioner — 3 curricula</div>
+      <div class="cert-pill">Certified Dyslexia Specialist</div>
+      <div class="cert-pill">15+ Yrs Assistive Technology</div>
+      <div class="cert-pill">NLP Master Coach</div>
+      <div class="cert-pill">Certified AI Consultant</div>
+      <div class="cert-pill">NC HB149 — Legislative Author</div>
     </div>
+    <div class="legislation-block">
+      <p><strong>NC HB149</strong> — signed July 20, 2017. Linda built the coalition, gathered the data, and wrote the legislation that gave every dyslexic child in North Carolina the right to identification and intervention. Dr. Fernette Eide helped design the research poll whose data was passed directly to NC State Superintendent Dr. June Atkinson — and delivered in person to Superintendent Mark Johnson when the bill became law.</p>
+    </div>
+  </div>
+  <div class="photo-panel face fade-in d1">
+    <img src="changelaws.jpeg" alt="Linda Colasanti speaking">
   </div>
 </section>
 
